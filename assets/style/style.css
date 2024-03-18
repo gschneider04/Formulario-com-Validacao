@@ -1,0 +1,136 @@
+@import url('https://fonts.cdnfonts.com/css/poppins');
+
+/* REALIZANDO ZERAMENTO DA PAGINA */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* CONFIGURANDO CORPO DA PAGINA */
+body {
+    background: rgb(39, 38, 38);
+    font-family: 'Poppins', sans-serif; 
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100vw;
+    height: 100vh;
+
+}
+
+/* ESTILIZANDO O FORMULARIO */
+
+.container {
+    background-color: rgb(46, 43, 43);
+    border-radius: 5px;
+    border: 2px solid #3E445B;
+    width: 450px;
+    max-width: 100%;
+}
+
+.header {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.header h2 {
+    font-weight: 600;
+    color: rgb(177, 234, 241);
+    font-size: 30px;
+}
+
+.form {
+    padding: 0 40px 30px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control label {
+    display: inline-block;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.form-control input {
+    border: 2px solid #3E445B;
+    border-radius: 5px;
+    outline: 0;
+    background-color: rgb(39, 38, 38);
+
+    display: block;
+
+    font-size: 14px;
+
+    width: 100%;
+    padding: 15px;
+    color: wheat;
+}
+
+.form-control.success input {
+    border: 3px solid #4ECA64;
+}
+
+.form-control.error input {
+    border: 3px solid #DB5A5A;
+}
+
+.form-control.error i.img-error {
+    visibility: visible;
+}
+
+.form-control.success i.img-success {
+    visibility: visible;
+}
+
+.form-control.error small{
+    color: #DB5A5A;
+    visibility: visible;
+}
+
+.form-control i {
+    position: absolute;
+    top: 45px;
+    right: 10px;
+    visibility: hidden;
+}
+
+.form-control small {
+    visibility: hidden;
+    position: absolute;
+    margin-top: 5px;
+    font-size: 14px;
+
+}
+
+.form button {
+    background-color: green;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    width: 100%;
+
+    margin-top: 5px;
+
+    cursor: pointer;
+}
+
+.form button:hover {
+    background-color: rgba(0, 128, 0, 0.664);
+    transition: 1s;
+}
+
+h2:hover {
+    color: green;
+    transition: 1s;
+}
